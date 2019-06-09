@@ -1,0 +1,94 @@
+.quienes-somos-content {
+    
+    padding: 3%;
+    padding-top: 55px;
+
+    .content {
+        color: black;
+        .main-title {
+            padding: 1.9% 1.4%;
+            margin: 0;
+            // font-size: 250%;
+            font: 300% Roboto;
+            text-transform: uppercase;
+            
+        }
+        .m-border {
+            margin: 2% 3% 0 3%;
+        }
+        &.row-1 {
+            // color:white !important;
+
+            .who-we-are {
+                & > * {
+                    margin: 0;
+                }
+                p {
+                    text-align: center;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &.row-2 {
+            border-radius: 8px;
+            margin: 60px;
+            margin-bottom: 0;
+            background-color: white;
+            .registration {
+                & > * {
+                    margin: 5%;
+                }
+            }
+        }
+        &.row-3 {
+            border-radius: 8px;
+            margin: 60px;
+            background-color: white;         
+        }
+        .image{
+            width: 10em;
+            height: 10em;
+        }
+        .container-images{
+            padding: 3%;
+        }
+        .names{
+            font-size: 24px;
+        }
+    }
+    
+}
+
+#input-name, #input-email {
+    margin: 5% 0;
+    font-family: Roboto;
+    font-size: 1.5rem;
+}
+#input-email{
+    margin-bottom: 35px;
+}
+#message-box {
+    display: none;
+    margin: 5% 0;
+
+    &.show-me {
+        display: block;
+    }
+}
+
+#btn-registration{
+    background-color: rgba(104, 93, 159, 0.9);
+    border-color: rgba(104, 93, 159, 0.9) !important;
+    margin: 0% 3% 3% 3%;
+    width: 30%;
+    height: 60px;
+    font-size: 1.9em;
+    font-family: Roboto;
+    &:target {
+        #message-box {
+            display: inline;
+        }
+    }
+}

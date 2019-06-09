@@ -1,0 +1,35 @@
+footer {
+    line-height: 80px;
+    height: 80px;
+    
+    color: #a9a9a9;
+    background-color: #1a1a1a;
+
+    & > p {
+        margin: 0;
+        @media (max-width: 540px) {
+            #text-1 strong {
+                display: none;
+            }
+            #myname-1 {
+                display: none;
+            }
+            #myname-2 {
+                display: initial;
+            }
+        }
+    }
+
+    @media (max-width: 380px) {
+        #text-1 {
+            display: none;
+        }
+        #text-2 {
+            display: block;
+        }
+    }
+}
+
+#myname-2, #text-2  {
+    display: none;               
+}

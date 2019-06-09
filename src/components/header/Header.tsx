@@ -8,6 +8,7 @@ import {
     NavItem,
     NavLink,
 } from 'reactstrap';
+import logo from '../../logo.svg';
 import './header.scss';
 
 interface Item {
@@ -38,7 +39,7 @@ export default function Header(props: IProps) {
     return (
         <header id="header">
             <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">reactstrap</NavbarBrand>
+                <NavbarBrand href="/"><img src={logo} className="App-logo" alt="logo" /></NavbarBrand>
                 <NavbarToggler onClick={() => setOpen(!isOpen)} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
@@ -48,9 +49,7 @@ export default function Header(props: IProps) {
                     </Nav>
                 </Collapse>
             </Navbar>
-                {/* <div className="header-overlay"> */}
-                    {props.children}
-                {/* </div> */}
+            {props.children}
         </header>
     );
 }

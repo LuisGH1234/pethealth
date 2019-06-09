@@ -1,4 +1,5 @@
 .header-text {
+    margin-left: 8%;
     color: #FFF;
     .header-heading {
         text-align: left;
@@ -20,7 +21,7 @@
     .header-btns {
         text-align: left;
         margin-top: 40px;
-        margin-left: 8px;
+        // margin-left: 8px;
         width: 100%;
         text-align: center;
 
@@ -40,7 +41,7 @@
 }
 
 .header-images {
-    // margin-left: 8%;
+    margin-left: 16%;
     figure {
         margin: 0;
         
@@ -76,11 +77,9 @@
     }
 
     @media (max-width: 767px) {
-        .row {
-            &:nth-child(2) {
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
+        .header-images {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -97,7 +96,22 @@
 .carousel-item {
     & > img {
         width: auto;
-        height: 670px;
+        height: 670px !important;
+    }
+}
+
+.item {
+    * {
+        display: inline-block;
+    }
+
+    @media (max-width: 991px) {
+        svg {
+            vertical-align: super;
+        }
+        div {
+            width: 80%;
+        }
     }
 }
 
@@ -105,11 +119,34 @@
     .carousel-item {
         & > img {
             width: auto;
-            height: 670px;
+            height: 570px;
         }
     }
-    
-    .content-overlay {
-        // height: 760px !important;
+
+    .header-images { 
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-images, .header-text {
+        // margin-left: 0;
+    }
+    // .container {
+    //     margin-right: 15px !important;
+    //     margin-left: 15px !important;
+    // }
+    .header-text{
+        .header-heading {
+            text-align: left;
+            h1 {
+                font-size: 45px;
+                letter-spacing: 2px;
+            }
+            h4 {
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
     }
 }
