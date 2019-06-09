@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pethealth/precache-manifest.b23c13b93672b711eaadddf5fc3ec511.js"
+  "/pethealth/precache-manifest.1e03f5dd0bf2c5fa996b413ffcb8d09b.js"
 );
 
 self.addEventListener('message', (event) => {
