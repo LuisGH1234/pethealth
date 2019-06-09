@@ -1,0 +1,115 @@
+.header-text {
+    color: #FFF;
+    .header-heading {
+        text-align: left;
+        h1 {
+            font-size: 60px;
+            line-height: 78px;
+            letter-spacing: 5px;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+        h4 {
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: 300;
+            margin: 0px;
+        }
+    }
+
+    .header-btns {
+        text-align: left;
+        margin-top: 40px;
+        margin-left: 8px;
+        width: 100%;
+        text-align: center;
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    .fa-icon {
+        width: 45px;
+        height: 50px;
+        margin-right: 8px;
+    }
+}
+
+.header-images {
+    // margin-left: 8%;
+    figure {
+        margin: 0;
+        
+        // position: relative;
+        .fade {
+            position: relative;
+            line-height: 530px;
+            height: 530px;
+            div {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                
+                img {
+                    height: 530px;
+                }
+            }
+        }
+    }
+}
+
+.content-overlay {
+    // padding: 30px 20%;
+    margin-top: 25px;
+    // margin-bottom: 25px;
+    // height: 760px;
+
+    @media (max-width: 1366px) {
+        // padding: 30px 7%;
+        padding: 0;
+    }
+
+    @media (max-width: 767px) {
+        .row {
+            &:nth-child(2) {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.carousel.slide {
+    & > a {
+        & > span {
+            background-color: unset;
+            background-image: unset;
+        }
+    }
+}
+
+.carousel-item {
+    & > img {
+        width: auto;
+        height: 670px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .carousel-item {
+        & > img {
+            width: auto;
+            height: 670px;
+        }
+    }
+    
+    .content-overlay {
+        // height: 760px !important;
+    }
+}
