@@ -91,4 +91,9 @@
             display: inline;
         }
     }
+
+    @media (max-width: 530px) {
+        width: 60%;
+        font-size: 1.4em;
+    }
 }

@@ -4,6 +4,7 @@ import './quienes-somos.scss';
 
 interface IState {
     showMessage: boolean;
+    collapse: boolean;
 }
 
 class QuienesSomos extends Component<any, IState> {
@@ -11,11 +12,17 @@ class QuienesSomos extends Component<any, IState> {
         super(props);
         this.state = {
             showMessage: false,
+            collapse: false ,
         }
+        this.toggle = this.toggle.bind(this);
     }
 
     renderSentences(sentence: string, index: number) {
         return (<p key={index}>{sentence}</p>);
+    }
+
+    toggle() {
+        this.setState(state => ({ collapse: !state.collapse }));
     }
 
     render() {
@@ -36,12 +43,11 @@ class QuienesSomos extends Component<any, IState> {
                         <Input placeholder="Nombre" id="input-name" />
                         <Input placeholder="Correo electronico" id ="input-email" />
                         <Button id="btn-registration" color="primary" 
-                            onClick={() => this.setState(prev => ({ showMessage: !prev.showMessage }))}>
+                            onClick={this.toggle}>
                             Enviar
                         </Button>
-                        <Collapse isOpen={false}>
-                            <Alert color="success" id="message-box" 
-                                className={`${showMessage ? 'show-me' : ''}`}>
+                        <Collapse isOpen={this.state.collapse}>
+                            <Alert color="success">
                                 ¡Gracias por seguirnos!
                             </Alert>
                         </Collapse>
