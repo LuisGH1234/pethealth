@@ -39,7 +39,7 @@ export default function Header(props: IProps) {
     return (
         <header id="header">
             <Navbar color="light" light expand="md">
-                <NavbarBrand href="/"><img src={logo} className="App-logo" alt="logo" /></NavbarBrand>
+                <NavbarBrand href="/pethealth"><img src={logo} className="App-logo" alt="logo" /></NavbarBrand>
                 <NavbarToggler onClick={() => setOpen(!isOpen)} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>

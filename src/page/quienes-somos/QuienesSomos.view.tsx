@@ -46,11 +46,13 @@ class QuienesSomos extends Component<any, IState> {
                             onClick={this.toggle}>
                             Enviar
                         </Button>
+                        <div className="box-collapse">
                         <Collapse isOpen={this.state.collapse}>
                             <Alert color="success">
                                 ¡Gracias por seguirnos!
                             </Alert>
                         </Collapse>
+                        </div>
                     </div>
                 </div>
                 <div className="content row-3">

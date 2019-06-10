@@ -3,7 +3,7 @@ import { Col, Row, Fade, Container } from 'reactstrap';
 import { Gallery } from '../../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
-import { faAndroid, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faAndroid, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 import './overlay.scss';
 
@@ -43,6 +43,12 @@ export default function OverLay() {
                         </a>
                         <a href="https://github.com/LuisGH1234/pethealth" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faGithub} className="fa-icon" />
+                        </a>
+                    </div>
+                    <div className="header-btns">
+                        <p>Visitanos</p>
+                        <a href="https://www.facebook.com/Pethealth-433916874102086/" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faFacebook} className="fa-icon" />
                         </a>
                     </div>
                 </div>
