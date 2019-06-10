@@ -61,6 +61,12 @@
     
 }
 
+.container-images {
+    .image {
+        overflow: hidden;
+    }
+}
+
 #input-name, #input-email {
     margin: 5% 0;
     font-family: Roboto;
@@ -96,4 +102,12 @@
         width: 60%;
         font-size: 1.4em;
     }
+}
+
+#omar-tronco {
+    transform: scale(1.7, 1.3) translateX(4px);
+}
+
+#mauricio-rivas {
+transform: translateX(-1px);
 }

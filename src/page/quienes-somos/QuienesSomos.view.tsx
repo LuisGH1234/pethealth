@@ -58,15 +58,15 @@ class QuienesSomos extends Component<any, IState> {
                     <Container className="container-images">
                         <Row>
                          <Col>
-                            <div>
-                                <img className="content image" src={`${process.env.PUBLIC_URL}/images/default-user.png`} alt="error" />
+                            <div className="image">
+                                <img className="content image" src={`${process.env.PUBLIC_URL}/images/MauricioRivas.jpg`} alt="error" id="mauricio-rivas" />
                             </div><br></br>
                             <div>
                                 <label className="names">Mauricio Rivas</label>
                             </div>
                           </Col>
                           <Col>
-                            <div>
+                            <div className="image">
                                 <img className="content image" src={`${process.env.PUBLIC_URL}/images/default-user.png`} alt="error" />
                             </div><br></br>
                             <div>
@@ -74,7 +74,7 @@ class QuienesSomos extends Component<any, IState> {
                             </div>
                           </Col>
                           <Col>
-                            <div>
+                            <div className="image">
                                 <img className="content image" src={`${process.env.PUBLIC_URL}/images/default-user.png`} alt="error" />
                             </div><br></br>
                             <div>
@@ -82,15 +82,15 @@ class QuienesSomos extends Component<any, IState> {
                             </div>
                           </Col>
                           <Col>
-                            <div>
-                                <img className="content image" src={`${process.env.PUBLIC_URL}/images/default-user.png`} alt="error" />
+                            <div className="image">
+                                <img className="content image" src={`${process.env.PUBLIC_URL}/images/OmarTronco.jpeg`} alt="error" id="omar-tronco" />
                             </div><br></br>
                             <div>
                                 <label className="names">Omar Troncos</label>
                             </div>
                           </Col>
                           <Col>
-                            <div>
+                            <div className="image">
                                 <img className="content image" src={`${process.env.PUBLIC_URL}/images/default-user.png`} alt="error" />
                             </div><br></br>
                             <div>
