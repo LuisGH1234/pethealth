@@ -5,6 +5,9 @@ import './quienes-somos.scss';
 interface IState {
     showMessage: boolean;
     collapse: boolean;
+
+    name: string;
+    email: string;
 }
 
 class QuienesSomos extends Component<any, IState> {
@@ -12,9 +15,13 @@ class QuienesSomos extends Component<any, IState> {
         super(props);
         this.state = {
             showMessage: false,
-            collapse: false ,
+            collapse: false,
+            name: '',
+            email: '',
         }
         this.toggle = this.toggle.bind(this);
+        this.onChange = this.onChange.bind(this);
+        this.onRegistration = this.onRegistration.bind(this);
     }
 
     renderSentences(sentence: string, index: number) {
@@ -25,8 +32,37 @@ class QuienesSomos extends Component<any, IState> {
         this.setState(state => ({ collapse: !state.collapse }));
     }
 
+    onChange(e: React.ChangeEvent<HTMLInputElement>) {
+        const { value, name } = e.target;
+        this.setState({
+            [name]: value,
+        } as Pick<IState, keyof unknown>);
+    }
+
+    async onRegistration() {
+        if (this.state.collapse === true) return this.toggle();
+        try {
+            const { name, email } = this.state;
+            const res = await fetch(url, { 
+                method: "POST", 
+                body: JSON.stringify({ name, email }),
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            });
+            // console.log(res, this.state.collapse);
+            if (res.status !== 404 && res.status !== 500) {
+                console.warn(`Bad status: ${res.status}`, res);
+            }
+            this.toggle();
+        } catch (error) {
+            console.error("Error trying to resgistrate")
+        }
+    }
+
     render() {
-        const { showMessage } = this.state;
+        const { showMessage, name, email } = this.state;
+
         return (
             <div className="quienes-somos-content" id="aboutus">
                 <div className="content row-1">
@@ -40,10 +76,10 @@ class QuienesSomos extends Component<any, IState> {
                 <div className="content row-2">
                     <h1 className="main-title">¿QUIERES SABER MAS SOBRE NUESTRA APP?</h1>
                     <div className="registration m-border">
-                        <Input placeholder="Nombre" id="input-name" />
-                        <Input placeholder="Correo electronico" id ="input-email" />
+                        <Input name="name" placeholder="Nombre" id="input-name" value={name} onChange={this.onChange}/>
+                        <Input name="email" placeholder="Correo electronico" id ="input-email" value={email} onChange={this.onChange} />
                         <Button id="btn-registration" color="primary" 
-                            onClick={this.toggle}>
+                            onClick={() => this.onRegistration()}>
                             Enviar
                         </Button>
                         <div className="box-collapse">
@@ -116,3 +152,6 @@ const textQuienesSomos = [
     '¡Además, te damos consejos de salud animal y guardamos un registro de las citas de tu mascota!',
     'Descarga nuestra aplicación y descubre todo lo que tenemos para ti.',
 ];
+
+// const url = "http://localhost:3001/api/register";
+const url = "https://pethealh-backend.herokuapp.com/api/register";
