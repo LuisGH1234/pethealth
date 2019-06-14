@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Input, Alert, Container, Row, Col, Collapse } from 'reactstrap';
+import moment from 'moment';
+import { toast } from 'react-toastify';
 import './quienes-somos.scss';
 
 interface IState {
@@ -28,8 +30,11 @@ class QuienesSomos extends Component<any, IState> {
         return (<p key={index}>{sentence}</p>);
     }
 
-    toggle() {
-        this.setState(state => ({ collapse: !state.collapse }));
+    toggle(message?: string) {
+        // this.setState(state => ({ collapse: !state.collapse }));
+        if (message) toast.error("Debe ingresar un email");
+        else toast.success("¡Gracias por seguirnos!");
+        this.setState({ name: '', email: '' });
     }
 
     onChange(e: React.ChangeEvent<HTMLInputElement>) {
@@ -40,20 +45,29 @@ class QuienesSomos extends Component<any, IState> {
     }
 
     async onRegistration() {
-        if (this.state.collapse === true) return this.toggle();
+        // if (this.state.collapse === true) return this.toggle();
         try {
             const { name, email } = this.state;
+            if (email === '' || !email) {
+                this.toggle("Debe ingresar un email");
+                return;
+            }
             const res = await fetch(url, { 
                 method: "POST", 
-                body: JSON.stringify({ name, email }),
+                body: JSON.stringify({ 
+                    name: name.trim(), 
+                    email: email.trim(),
+                    date: moment().format("YYYY-MM-DD HH:mm:ss"),
+                }),
                 headers: {
                     'Content-Type': 'application/json'
                 },
             });
             // console.log(res, this.state.collapse);
-            if (res.status !== 404 && res.status !== 500) {
+            if (res.status === 404 || res.status === 500) {
                 console.warn(`Bad status: ${res.status}`, res);
             }
+            console.assert(res.status === 200, "Good registration");
             this.toggle();
         } catch (error) {
             console.error("Error trying to resgistrate")
@@ -105,7 +119,7 @@ class QuienesSomos extends Component<any, IState> {
                           </Col>
                           <Col>
                             <div className="image">
-                                <img className="content image" src={`${process.env.PUBLIC_URL}/images/default-user.png`} alt="error" />
+                                <img className="content image" src={`${process.env.PUBLIC_URL}/images/LuisGalindo.jpg`} alt="error" id="luis-galindo" />
                             </div><br></br>
                             <div>
                                 <label className="names">Luis Galindo</label>
@@ -113,7 +127,7 @@ class QuienesSomos extends Component<any, IState> {
                           </Col>
                           <Col>
                             <div className="image">
-                                <img className="content image" src={`${process.env.PUBLIC_URL}/images/default-user.png`} alt="error" />
+                                <img className="content image" src={`${process.env.PUBLIC_URL}/images/SaritaRojas.jpg`} alt="error" id="sarita-rojas" />
                             </div><br></br>
                             <div>
                                 <label className="names">Sarita Rojas</label>
@@ -129,7 +143,7 @@ class QuienesSomos extends Component<any, IState> {
                           </Col>
                           <Col>
                             <div className="image">
-                                <img className="content image" src={`${process.env.PUBLIC_URL}/images/default-user.png`} alt="error" />
+                                <img className="content image" src={`${process.env.PUBLIC_URL}/images/KristellCollazos.jpg`} alt="error" id="kristell-collazos" />
                             </div><br></br>
                             <div>
                                 <label className="names">Kristel Collazos</label>

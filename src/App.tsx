@@ -1,12 +1,14 @@
 import React from 'react';
 import { Header, Footer } from './components';
 import { Overlay, AboutUs } from './page';
+import { ToastContainer } from 'react-toastify';
 
 import './App.scss';
 
 const App: React.FC = () => {
   return (
     <div className="App">
+      <ToastContainer />
       <Header items={navItems}><Overlay /></Header>
       <AboutUs />
       <Footer />
