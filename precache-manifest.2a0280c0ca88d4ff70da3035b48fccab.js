@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33fb05727c68a2023562d6ca3a04445f",
+    "revision": "fd006f94ebe12a9d132366e5a14b74e2",
     "url": "/pethealth/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pethealth/static/css/2.81cb803e.chunk.css"
   },
   {
-    "revision": "b34ecf10a357fe358a2a",
-    "url": "/pethealth/static/css/main.bad25bab.chunk.css"
+    "revision": "25d042b85f51ba389267",
+    "url": "/pethealth/static/css/main.ffd564cb.chunk.css"
   },
   {
     "revision": "742180d371f21d5edb35",
     "url": "/pethealth/static/js/2.0a4f4b1d.chunk.js"
   },
   {
-    "revision": "b34ecf10a357fe358a2a",
-    "url": "/pethealth/static/js/main.94d3d8be.chunk.js"
+    "revision": "25d042b85f51ba389267",
+    "url": "/pethealth/static/js/main.cbe2a3a3.chunk.js"
   },
   {
     "revision": "fc04a97ac72e26909935",
@@ -28,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pethealth/static/media/Roboto-Light.c6cdfded.ttf"
   },
   {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/pethealth/static/media/logo.5d5d9eef.svg"
+    "revision": "0610d7f19dfa2cb77929cedbd9185dd0",
+    "url": "/pethealth/static/media/logo-2.0610d7f1.svg"
   }
 ]);

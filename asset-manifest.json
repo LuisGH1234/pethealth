@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/pethealth/static/css/main.bad25bab.chunk.css",
-    "main.js": "/pethealth/static/js/main.94d3d8be.chunk.js",
-    "main.js.map": "/pethealth/static/js/main.94d3d8be.chunk.js.map",
+    "main.css": "/pethealth/static/css/main.ffd564cb.chunk.css",
+    "main.js": "/pethealth/static/js/main.cbe2a3a3.chunk.js",
+    "main.js.map": "/pethealth/static/js/main.cbe2a3a3.chunk.js.map",
     "runtime~main.js": "/pethealth/static/js/runtime~main.f9a6266f.js",
     "runtime~main.js.map": "/pethealth/static/js/runtime~main.f9a6266f.js.map",
     "static/css/2.81cb803e.chunk.css": "/pethealth/static/css/2.81cb803e.chunk.css",
     "static/js/2.0a4f4b1d.chunk.js": "/pethealth/static/js/2.0a4f4b1d.chunk.js",
     "static/js/2.0a4f4b1d.chunk.js.map": "/pethealth/static/js/2.0a4f4b1d.chunk.js.map",
     "index.html": "/pethealth/index.html",
-    "precache-manifest.8caef56a4d47560216c4bae4ab05341f.js": "/pethealth/precache-manifest.8caef56a4d47560216c4bae4ab05341f.js",
+    "precache-manifest.2a0280c0ca88d4ff70da3035b48fccab.js": "/pethealth/precache-manifest.2a0280c0ca88d4ff70da3035b48fccab.js",
     "service-worker.js": "/pethealth/service-worker.js",
     "static/css/2.81cb803e.chunk.css.map": "/pethealth/static/css/2.81cb803e.chunk.css.map",
-    "static/css/main.bad25bab.chunk.css.map": "/pethealth/static/css/main.bad25bab.chunk.css.map",
+    "static/css/main.ffd564cb.chunk.css.map": "/pethealth/static/css/main.ffd564cb.chunk.css.map",
     "static/media/index.scss": "/pethealth/static/media/Roboto-Light.c6cdfded.ttf",
-    "static/media/logo.svg": "/pethealth/static/media/logo.5d5d9eef.svg"
+    "static/media/logo-2.svg": "/pethealth/static/media/logo-2.0610d7f1.svg"
   }
 }
