@@ -8,7 +8,7 @@ import {
     NavItem,
     NavLink,
 } from 'reactstrap';
-import logo from '../../logo.svg';
+import logo from '../../logo-2.svg';
 import './header.scss';
 
 interface Item {
