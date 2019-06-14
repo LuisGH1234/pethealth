@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/pethealth/static/css/main.5727e054.chunk.css",
-    "main.js": "/pethealth/static/js/main.c4731ba2.chunk.js",
-    "main.js.map": "/pethealth/static/js/main.c4731ba2.chunk.js.map",
+    "main.css": "/pethealth/static/css/main.bad25bab.chunk.css",
+    "main.js": "/pethealth/static/js/main.94d3d8be.chunk.js",
+    "main.js.map": "/pethealth/static/js/main.94d3d8be.chunk.js.map",
     "runtime~main.js": "/pethealth/static/js/runtime~main.f9a6266f.js",
     "runtime~main.js.map": "/pethealth/static/js/runtime~main.f9a6266f.js.map",
-    "static/css/2.266e55a5.chunk.css": "/pethealth/static/css/2.266e55a5.chunk.css",
-    "static/js/2.b76b43cb.chunk.js": "/pethealth/static/js/2.b76b43cb.chunk.js",
-    "static/js/2.b76b43cb.chunk.js.map": "/pethealth/static/js/2.b76b43cb.chunk.js.map",
+    "static/css/2.81cb803e.chunk.css": "/pethealth/static/css/2.81cb803e.chunk.css",
+    "static/js/2.0a4f4b1d.chunk.js": "/pethealth/static/js/2.0a4f4b1d.chunk.js",
+    "static/js/2.0a4f4b1d.chunk.js.map": "/pethealth/static/js/2.0a4f4b1d.chunk.js.map",
     "index.html": "/pethealth/index.html",
-    "precache-manifest.e2b0cd6602436186682ca69a1fd7b904.js": "/pethealth/precache-manifest.e2b0cd6602436186682ca69a1fd7b904.js",
+    "precache-manifest.8caef56a4d47560216c4bae4ab05341f.js": "/pethealth/precache-manifest.8caef56a4d47560216c4bae4ab05341f.js",
     "service-worker.js": "/pethealth/service-worker.js",
-    "static/css/2.266e55a5.chunk.css.map": "/pethealth/static/css/2.266e55a5.chunk.css.map",
-    "static/css/main.5727e054.chunk.css.map": "/pethealth/static/css/main.5727e054.chunk.css.map",
+    "static/css/2.81cb803e.chunk.css.map": "/pethealth/static/css/2.81cb803e.chunk.css.map",
+    "static/css/main.bad25bab.chunk.css.map": "/pethealth/static/css/main.bad25bab.chunk.css.map",
     "static/media/index.scss": "/pethealth/static/media/Roboto-Light.c6cdfded.ttf",
     "static/media/logo.svg": "/pethealth/static/media/logo.5d5d9eef.svg"
   }
