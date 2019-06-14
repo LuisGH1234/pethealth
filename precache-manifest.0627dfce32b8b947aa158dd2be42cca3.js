@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5130d2652567f8ca5ddd05a7f91f93d",
+    "revision": "896522d038d6e1e390f5886ba4667256",
     "url": "/pethealth/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pethealth/static/css/2.81cb803e.chunk.css"
   },
   {
-    "revision": "f92403baf5c83cf55c6a",
+    "revision": "82bd70c4304776656fd9",
     "url": "/pethealth/static/css/main.ffd564cb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pethealth/static/js/2.ddd553a1.chunk.js"
   },
   {
-    "revision": "f92403baf5c83cf55c6a",
-    "url": "/pethealth/static/js/main.ecd873de.chunk.js"
+    "revision": "82bd70c4304776656fd9",
+    "url": "/pethealth/static/js/main.519e8bb0.chunk.js"
   },
   {
     "revision": "fc04a97ac72e26909935",
